@@ -1,0 +1,104 @@
+.navbar {
+    position: sticky;
+    top:0;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.10);
+    z-index: 10000;
+    background-color: #18181b;
+    padding: 15px 0;
+}
+.navbar__main {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.navbar__logo {
+    font-family: 'Jua', sans-serif;
+    color: #d6d6db;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0 10px;
+}
+.navbar__logo--themeColor{
+    color: #18babd;
+}
+.navbar__list--desktop {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.navbar__list--desktop li {
+    margin: 0 20px;
+    font-size: 1.2rem;
+    color: #d6d6db;
+}
+.navbar__list--desktop li::after
+{
+    content:'';
+    display: block;
+    width:100%;
+    height:0.25rem;
+    margin-top:0.25rem;
+    border-radius:0.1875rem;
+    background:#18babd;
+    transform: scaleX(0);
+    transition: 0.17s;
+}
+.navbar__list--desktop li:hover a{
+    transition: 0.17s;
+}
+.navbar__list--desktop li:hover a{
+    color:#18babd;
+}
+.navbar__list--desktop li:hover:after{
+    transform: scaleX(1);
+}
+.navbar__list--mobile{
+    display: none;
+}
+.navbar__mobile--icon{
+    display: none;
+}
+@media screen and (max-width:650px) {
+    .navbar__list--desktop {
+        display: none;
+    }
+    .navbar__mobile--icon {
+       color: #d6d6db;
+       display: inline;
+       font-size: 2.5rem;
+       cursor: pointer;
+       margin: 0 5px; 
+    }
+    .navbar__list--mobile {
+        display:block;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        list-style: none;
+        position: absolute;
+        top:100%;
+        left:0;
+        font-size: 1.2rem;
+        z-index: 1000;
+        background-color: #18181b;
+        transition: 0.2s;
+        width: 100%;
+        overflow: hidden;
+    }
+    .navbar__list--mobileShow{
+     height: 180px;
+    }
+    .navbar__list--mobile li a{
+     display:flex;
+     color: #d6d6db;
+     justify-content: center;
+     align-items: center    ;
+     height: 60px;
+
+    }
+ 
+    .navbar__list--mobile li a:hover{
+        background: #242429;
+    }
+} 

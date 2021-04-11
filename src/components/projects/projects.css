@@ -1,0 +1,15 @@
+.projects {
+    width: 90%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.projects__projectCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}@media screen and (max-width:600px) {
+    .projects {
+        margin: 20px auto;
+    }
+ 
+}

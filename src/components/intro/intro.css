@@ -1,0 +1,123 @@
+.intro{
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+    padding: 150px 0 200px 0;
+    width: 90%;
+    max-width: 1100px;
+}
+.intro__image {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.intro__imageBack {
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width:100%;
+    height:100%;
+    border: 5px solid #303036;
+    background-color: #303036;
+    box-sizing: border-box;
+    animation:changeBorderradii 5s ease-in-out infinite alternate-reverse;
+}
+@keyframes changeBorderradii {
+    from {
+     border-radius: 85% 15% 66% 34% / 26% 61% 39% 74%;
+     transform:translate(0px,0px);
+    }
+    to {
+     border-radius:39% 61% 27% 73% / 83% 19% 81% 17%;
+     transform:translate(10px,-10px);
+    }
+}
+.taniImage {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.intro__desc {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction:column;
+    justify-content: center;
+    max-width: 650px;
+    margin-left:30px;
+}
+.whiteColor {
+    color :white;
+}
+.intro__head {
+    color:#d6d6db;
+    font-size: 3rem;
+    margin:10px 0;
+    font-family: sans-serif;
+}
+.intro__head--name {
+    color: #18babd;
+}
+.intro__text {
+    margin: 0;
+    font-size: 1.7rem;
+    color:#93939f;
+    font-weight: 600;
+}
+.intro__aboutLink {
+    color:#18babd;
+    border-radius:30px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding:15px 20px;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: -2px -2px 2px rgba(255,255,255,0.15),2px 2px 2px rgba(0,0,0,0.34);
+    margin: 50px 0 20px 0;
+    transition: 0.3s;
+}
+.intro__aboutLink:hover{
+    box-shadow: 2px 2px 2px rgba(255,255,255,0.15),-2px -2px 2px rgba(0,0,0,0.34);
+}
+@media screen and (max-width :1100px) {
+   .intro {
+       flex-direction: column;
+       padding: 50px 0 100px 0;
+   }
+   .intro__image {
+       margin: 0 auto;
+   }
+   .intro__desc {
+       display: flex;
+       justify-content: center;
+   }
+}
+@media screen and (max-width :600px) {
+    .intro__image {
+        width: 330px;
+        height: 330px;
+    }
+    .taniImage {
+        width: 270px;
+        height: 270px;
+    }
+    .intro__desc {
+      margin: 50px 0 0 0;
+    }
+    .intro__head {
+        font-size: 2.1rem;
+    } 
+    .intro__text {
+        font-size: 1.5rem;
+    } 
+    .intro__aboutLink  {
+        font-size: 1.2rem;
+    }
+ }

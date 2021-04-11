@@ -1,0 +1,48 @@
+.contact{
+width: 90%;
+max-width: 1200px;
+margin: 150px auto;
+}
+.contact__form {
+    width: 100%;
+    margin:50px auto;
+    max-width: 800px;
+}
+.contact__input {
+    width: 100%;
+    box-sizing: border-box;
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    background-color:transparent;
+    border: 3px solid #252529;
+    padding: 20px 10px;
+    border-radius: 4px;
+    margin-bottom:15px;
+    outline: none; 
+}
+textarea.contact__input {
+    resize: none;
+    font-family:sans-serif;
+   font-size:1.2rem;
+}
+.contact__button {
+    background: transparent;
+    border:2px solid #18babd;
+    border-radius: 4px;
+    color:#18babd;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+.contact__button:hover {
+    background: rgba(24, 186, 189,0.1);
+}
+
+@media screen and (max-width:600px) {
+    .contact__input {
+        font-size: 1rem;
+    }
+ 
+}
