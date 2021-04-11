@@ -33,8 +33,8 @@ const About = () => {
            <div className="about__subSection">
             <ul>
                <li className='about__subSectionitem'>Business</li>
-               <li className='about__subSectionitem'>Guitar</li>
-               <li className='about__subSectionitem'>Psychology</li>
+               <li className='about__subSectionitem'>Playing Guitar</li>
+               <li className='about__subSectionitem'>Mindfulness</li>
                <li className='about__subSectionitem'>Singing</li>
                <li className='about__subSectionitem'>Web</li>
             </ul>
