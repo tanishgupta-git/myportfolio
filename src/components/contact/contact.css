@@ -3,6 +3,7 @@ width: 90%;
 max-width: 1200px;
 margin: 150px auto;
 }
+
 .contact__form {
     width: 100%;
     margin:50px auto;
@@ -17,8 +18,23 @@ margin: 150px auto;
     border: 3px solid #252529;
     padding: 20px 10px;
     border-radius: 4px;
-    margin-bottom:15px;
+    margin-bottom:30px;
     outline: none; 
+}
+.contact__message {
+    margin:20px 0;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    display: inline-block
+}
+.contact__message--success {
+    border:1px solid #18babd;
+    color: #18babd;
+}
+.contact__message--error {
+    border:1px solid #ff4d4d;
+    color :#ff4d4d;
 }
 textarea.contact__input {
     resize: none;
