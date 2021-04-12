@@ -17,7 +17,9 @@ function Intro() {
        </Zoom>
   
         <div className='intro__desc'>
-        <Fade bottom><h1 className='intro__head'>Hello I'm <span className='intro__head--name'>Tanish</span></h1></Fade>
+        <Fade bottom><p className='intro__msg'>Hi, my name is</p></Fade>
+        <Fade bottom><h1 className='intro__head'>Tanish Gupta.
+        </h1></Fade>
         <Fade bottom><h1 className='intro__text'>I design and develop web apps that promote people 24/7.</h1></Fade>
         <Fade bottom> <a href="#about" className='intro__aboutLink'>More About Me</a></Fade>
           </div>

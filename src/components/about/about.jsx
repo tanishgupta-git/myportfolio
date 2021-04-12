@@ -25,7 +25,7 @@ const About = () => {
          <div className="about__side">
         {
            show.type === "quote" && <div className="about__quote">
-           "He who has a why to live can bear almost any how."
+           He who has a why to live can bear almost any how.
            <span className="about__quoteAuthor"><em>Friedrich Nietzsche</em></span>
            </div> 
          }
@@ -61,7 +61,7 @@ const About = () => {
      <Fade bottom><div className="about__message">
      <h1 className="about__messageHead">Get In Touch</h1>
      <p className='about__text--light'>If you have any project to collaborate or have a business idea, 
-     i would love to interect with you. Send me a message on any social platforms or <a href="#contact" className='about__contact'>Contact</a> me.</p>
+     i would love to be interect with you. Send me a message by <a href="#contact" className='about__contact'>Contact</a> form.</p>
      </div>
      </Fade>
     </div>

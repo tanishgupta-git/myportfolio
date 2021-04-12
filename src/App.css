@@ -12,10 +12,10 @@
 }
 .app__imageParent {
   position: relative;
-  width: 230px;
-  height: 190px;
+  width: 130px;
+  height: 170px;
 }
-.app__loaderSvgRect  {
+.app__loaderSvgHex  {
   box-sizing: border-box;
   fill: transparent;
   stroke-width:6;
@@ -25,12 +25,12 @@
   stroke-dashoffset:805;
   stroke-linecap: round;
   box-shadow: rgba(0,0,0,0.23);
-  animation: loaderComplete ease-in-out 1s 0.3s forwards;
+  animation: loaderComplete ease-in-out 1s 0.5s forwards;
 }
 .app__loaderImageParent {
-  width: 200px;
+  width: 90px;
   position: absolute;
-  top:7%;
+  top:10%;
   left:6%;
 
 }

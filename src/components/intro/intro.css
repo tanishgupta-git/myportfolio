@@ -1,5 +1,6 @@
 .intro{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     margin:0 auto;
     padding: 150px 0 200px 0;
@@ -43,25 +44,29 @@
     object-fit: contain;
     border-radius: 50%;
 }
+.intro__msg {
+    color: #18babd;
+    font-size: 1.2rem;
+    word-spacing: 0.3em;
+    margin: 10px 0;
+}
 .intro__desc {
     display: flex;
     box-sizing: border-box;
     flex-direction:column;
     justify-content: center;
-    max-width: 650px;
+    width:650px;
     margin-left:30px;
 }
 .whiteColor {
     color :white;
 }
 .intro__head {
-    color:#d6d6db;
+    color:#aeaeb7;
     font-size: 3rem;
     margin:10px 0;
+    font-weight: 600;
     font-family: sans-serif;
-}
-.intro__head--name {
-    color: #18babd;
 }
 .intro__text {
     margin: 0;
@@ -71,48 +76,51 @@
 }
 .intro__aboutLink {
     color:#18babd;
-    border-radius:30px;
+    border: 2px solid #18babd;
+    border-radius:4px;
     font-size: 1.4rem;
     font-weight: 400;
     text-decoration: none;
-    padding:15px 20px;
-    max-width: 190px;
+    padding:10px 15px;
+    max-width:170px;
     text-align: center;
     display: inline-block;
-    box-shadow: -2px -2px 2px rgba(255,255,255,0.15),2px 2px 2px rgba(0,0,0,0.34);
     margin: 50px 0 20px 0;
     transition: 0.3s;
 }
 .intro__aboutLink:hover{
-    box-shadow: 2px 2px 2px rgba(255,255,255,0.15),-2px -2px 2px rgba(0,0,0,0.34);
+    background: rgba(24, 186, 189,0.1);
 }
 @media screen and (max-width :1100px) {
    .intro {
-       flex-direction: column;
+       grid-template-columns:100%;
        padding: 50px 0 100px 0;
    }
    .intro__image {
        margin: 0 auto;
+       order: 2;
    }
    .intro__desc {
-       display: flex;
-       justify-content: center;
+       box-sizing: border-box;
+       width: 100%;
+       order: 1;
    }
 }
 @media screen and (max-width :600px) {
     .intro__image {
-        width: 330px;
-        height: 330px;
+        width: 290px;
+        height: 290px;
+        margin: 50px auto 0 auto;
     }
     .taniImage {
-        width: 270px;
-        height: 270px;
+        width: 240px;
+        height: 240px;
     }
     .intro__desc {
-      margin: 50px 0 0 0;
+      margin:0;
     }
     .intro__head {
-        font-size: 2.1rem;
+        font-size: 2.4rem;
     } 
     .intro__text {
         font-size: 1.5rem;

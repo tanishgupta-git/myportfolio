@@ -33,6 +33,7 @@
 .about__buttons {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     max-width: 600px;
 }
 .about__button {
@@ -46,6 +47,7 @@
     cursor: pointer;
     outline: none;
     border-radius: 4px;
+    margin: 10px 0;
 }
 .about__button--active{
     background: rgba(24, 186, 189,0.1);  
@@ -61,7 +63,7 @@
     padding: 30px;
 }
 .about__quote {
-    max-width: 700px;
+    max-width:600px;
     font-size: 1.4rem;
     color: #93939f;
 }
@@ -69,14 +71,14 @@
     display:flex;
     justify-content: flex-end;
     font-size: 1.1rem;
-    margin: 10px 0;
+    margin:10px 0;
 }
 
 .about__subSection ul {
     list-style: none;
     display: grid;
     grid-template-columns: auto auto;
-    width: 300px;
+    width: 330px;
     margin: 0;
     padding: 0;
 }
@@ -129,6 +131,12 @@
     }
     .about__button {
         margin: 10px 0;
+        font-size: 1rem;
+    }
+    .about__quote{
+        font-size: 1.2rem;
+    } 
+    .about__quoteAuthor {
         font-size: 1rem;
     }
 }

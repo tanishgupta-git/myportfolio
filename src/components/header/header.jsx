@@ -2,12 +2,14 @@ import React,{useState} from 'react';
 import './header.css';
 import { HiMenuAlt3,HiOutlineX } from "react-icons/hi";
 import Fade from 'react-reveal/Fade';
+import Logo from '../../logo.png';
+
 const Header = () => {
     const [showNav,SetshowNav] = useState(false); 
     return (
       <Fade top><nav className='navbar'>
       <div className='navbar__main'>
-        <h1 className='navbar__logo'><span className='navbar__logo--themeColor'>Tanish</span> Gupta</h1>
+        <img className="navbar__logo" src={Logo} alt=""/>
         <ul className='navbar__list--desktop'>
           <li><a href='#about'>About</a></li>
           <li><a href='#projects'>Projects</a></li>

@@ -12,7 +12,7 @@ margin: 150px auto;
 .contact__input {
     width: 100%;
     box-sizing: border-box;
-    color:rgba(255, 255, 255, 0.8);
+    color:#93939f;
     font-size: 1.2rem;
     background-color:transparent;
     border: 3px solid #252529;
@@ -20,6 +20,9 @@ margin: 150px auto;
     border-radius: 4px;
     margin-bottom:30px;
     outline: none; 
+}
+::placeholder {
+    color: #93939f;
 }
 .contact__message {
     margin:20px 0;

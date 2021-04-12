@@ -21,9 +21,10 @@ function App() {
     { loading ?  
     <div className="app__loader">
     <div className="app__imageParent">
-      <svg width="230" height="190" className="app__loaderSvg">
-        <rect width="220" x="3" y="4" height="180" className="app__loaderSvgRect" />
-      </svg>
+    <svg height="130" width="130" className="app__loaderSvg">
+      		<polygon  points="55 3,105 30,105 87,55 120,3 87,3 30" 
+      	 className="app__loaderSvgHex"/>
+    	</svg>
     <Zoom><div className="app__loaderImageParent"><img className="app__loaderImage" src={Logo} alt=""/></div></Zoom>
     </div>
   </div>
