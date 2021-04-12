@@ -11,7 +11,7 @@ const About = () => {
         <div className="about__section">
          <Fade bottom><div className='about__text'>
          Hii I am Tanish Gupta. I am currently pursuing my B.Tech in CSE from Indian Institute of Information Technology Vadoadara. I like to build things on web.
-         I am currently designing and developing websites using Javascript that enhance user expereince.
+         I am currently designing and developing websites using Javascript that enhance user experience.
          </div></Fade>
          <Fade bottom><img src={Welcome} alt="" className="about__sectionImage"/></Fade>
          </div>
