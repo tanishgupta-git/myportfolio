@@ -27,7 +27,7 @@
     font-size: 1.2rem;
 }
 .navbar__list--desktop li a {
-    color: #f3f3f9;
+    color: #aeaeb7;
 }
 .navbar__list--desktop li::after
 {
@@ -61,7 +61,7 @@
         display: none;
     }
     .navbar__mobile--icon {
-       color: #f3f3f9;
+       color: #aeaeb7;
        display: inline;
        font-size: 2.5rem;
        cursor: pointer;
@@ -88,7 +88,7 @@
     }
     .navbar__list--mobile li a{
      display:flex;
-     color: #f3f3f9;
+     color: #aeaeb7;
      justify-content: center;
      align-items: center    ;
      height: 60px;

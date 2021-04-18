@@ -1,10 +1,12 @@
 .fotter {
-    margin: 50px 0 20px 0;
+    margin: 50px auto 20px auto;
     padding: 10px;
     position: relative;
+    width: 90%;
+   max-width: 1200px;
     }
 .fotter__socialHead {
-    margin: 0 20px;
+    margin: 0;
     font-size: 1.8rem;
     color: #6c6c7a;
     font-weight: 700;
@@ -13,11 +15,11 @@
     padding: 0;
     list-style: none;
     display: flex;
-    margin:20px 0 40px 20px;    
+    margin:20px 0 40px 0;    
 }
 .fotter__social a{
     font-size: 1.8rem;
-    color: #bbbbc3;
+    color: #aeaeb7;
     cursor: pointer;
     margin: 0 30px 0 0;
     transition: 0.25s;
@@ -27,10 +29,11 @@
     transform: translateY(-5px);
 }
 .fotter__head {
-    color: #afaeae;
+    color: #aeaeb7  ;
     font-size: 1.5rem;
     text-align: center;
-    font-weight: 600;
+    font-weight:400;
+    margin-top:50px;
 }
 
 @media screen and (max-width:600px) {

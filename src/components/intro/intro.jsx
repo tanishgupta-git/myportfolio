@@ -1,5 +1,5 @@
 import React from 'react';
-import TanishImage from '../../TanishProfileImage.png'
+import TanishImage from '../../TanishProfileImage.PNG'
 import './intro.css';
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
