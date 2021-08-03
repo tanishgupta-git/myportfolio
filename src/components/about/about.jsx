@@ -47,9 +47,9 @@ const About = () => {
                <li className='about__subSectionitem'>React</li>
                <li className='about__subSectionitem'>Node.js</li>
                <li className='about__subSectionitem'>MongoDb</li>
-               <li className='about__subSectionitem'>Express</li>
+               <li className='about__subSectionitem'>GraphQl</li>
                <li className='about__subSectionitem'>Redux</li>
-               <li className='about__subSectionitem'>Django</li>
+               <li className='about__subSectionitem'>React-Native</li>
             </ul>
          </div>
         )
@@ -60,8 +60,7 @@ const About = () => {
       </Fade>
      <Fade bottom><div className="about__message">
      <h1 className="about__messageHead">Get In Touch</h1>
-     <p className='about__text--light'>If you have any project to collaborate or have a business idea, 
-     i would love to be interect with you. Send me a message by <a href="#contact" className='about__contact'>Contact</a> form.</p>
+     <p className='about__text--light'>If you have any business idea or Just want to connect, i would love to be interect with you. Send me a message by <a href="#contact" className='about__contact'>Contact</a> form.</p>
      </div>
      </Fade>
     </div>
