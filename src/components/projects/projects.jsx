@@ -54,12 +54,12 @@ function Projects() {
              githubLink="https://github.com/tanishgupta-git/Rental-Seeker.git"
              />
              
-             {/* Patatap Clone */}
-             <Project title="Patatap Clone"
-             desc="A visual sound kit application where you can play different beats using the keyboard 
-             keys. In this i have used a audio library Howler.js for adding sound when a user hit a key."
-             langs={['Html','Css','Javascript','Paper.js']}
-             githubLink=""  
+             {/* Expenser */}
+             <Project title="Expenser"
+             desc="A android app made in react-native for managing personal finance. In this you can add transactions and create your monthly budget which
+             help you to limit your expenses. I have added chart functionality which help you to compare your income and expense transactions."
+             langs={['React-Native','Firebase']}
+             githubLink="https://github.com/tanishgupta-git/Expenser"  
              />
             </div>
         </div>
