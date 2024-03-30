@@ -47,7 +47,6 @@
 .intro__msg {
     color: #18babd;
     font-size: 1.2rem;
-    word-spacing: 0.3em;
     margin: 10px 0;
 }
 .intro__desc {
@@ -66,7 +65,6 @@
     font-size: 3rem;
     margin:10px 0;
     font-weight: 600;
-    font-family: sans-serif;
 }
 .intro__text {
     margin: 0;
@@ -82,7 +80,7 @@
     font-weight: 400;
     text-decoration: none;
     padding:10px 15px;
-    max-width:170px;
+    max-width:220px;
     text-align: center;
     display: inline-block;
     margin: 50px 0 20px 0;

@@ -29,6 +29,7 @@
 .project__title{
     color: #aeaeb7;
     font-size: 1.8rem;
+    font-weight: bold;
     margin: 15px 0;
 }
 .project__langs {
@@ -48,7 +49,9 @@
     color: #93939f;
 }
 .project__links {
-    margin: 20px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 .project__links a {
     font-size: 2rem;

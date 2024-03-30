@@ -1,67 +1,80 @@
-.contact{
-width: 90%;
-max-width: 1200px;
-margin: 150px auto;
+.contact {
+  width: 90%;
+  max-width: 1200px;
+  margin: 150px auto;
 }
 
 .contact__form {
-    width: 100%;
-    margin:50px auto;
-    max-width: 800px;
+  width: 100%;
+  margin: 50px auto;
+  max-width: 800px;
 }
 .contact__input {
-    width: 100%;
-    box-sizing: border-box;
-    color:#93939f;
-    font-size: 1.2rem;
-    background-color:transparent;
-    border: 3px solid #252529;
-    padding: 20px 10px;
-    border-radius: 4px;
-    margin-bottom:30px;
-    outline: none; 
+  width: 100%;
+  box-sizing: border-box;
+  color: #93939f;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 3px solid #252529;
+  padding: 20px 10px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  outline: none;
 }
 ::placeholder {
-    color: #93939f;
+  color: #93939f;
 }
 .contact__message {
-    margin:20px 0;
-    padding: 10px;
-    font-size: 1.1rem;
-    border-radius: 4px;
-    display: inline-block
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
 }
 .contact__message--success {
-    border:1px solid #18babd;
-    color: #18babd;
+  border: 1px solid #18babd;
+  color: #18babd;
 }
 .contact__message--error {
-    border:1px solid #ff4d4d;
-    color :#ff4d4d;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+}
+.contact__message--field_error {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #ff4d4d;
 }
 textarea.contact__input {
-    resize: none;
-    font-family:sans-serif;
-   font-size:1.2rem;
-}
-.contact__button {
-    background: transparent;
-    border:2px solid #18babd;
-    border-radius: 4px;
-    color:#18babd;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: 0.3s;
-    outline: none;
-}
-.contact__button:hover {
-    background: rgba(24, 186, 189,0.1);
+  resize: none;
+  font-family: sans-serif;
+  font-size: 1.2rem;
 }
 
-@media screen and (max-width:600px) {
-    .contact__input {
-        font-size: 1rem;
-    }
- 
+.contact__button {
+  background: transparent;
+  border: 2px solid #18babd;
+  border-radius: 4px;
+  color: #18babd;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+.contact__button_fade {
+  opacity: 0.5;
+}
+.contact__button:hover {
+  background: rgba(24, 186, 189, 0.1);
+}
+
+@media screen and (max-width: 600px) {
+  .contact__input {
+    font-size: 1rem;
+  }
+
+  .contact__button {
+    padding: 12.5px 25px;
+    font-size: 1rem;
+  }
 }
