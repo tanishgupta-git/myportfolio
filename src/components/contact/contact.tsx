@@ -72,8 +72,9 @@ const Contact = () => {
             email: "",
           }}
           validationSchema={ContactSchema}
+          validateOnBlur={false}
+          validateOnChange={false}
           onSubmit={(values: IContactSubmission) => {
-            // same shape as initial values
             handleSubmit(values);
           }}
         >
