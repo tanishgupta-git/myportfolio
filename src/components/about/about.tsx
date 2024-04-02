@@ -20,82 +20,87 @@ const About = () => {
             strategies, and immersing myself in the world of arts. Let&apos;s
             connect and exchange thoughts on these fascinating subjects!.
           </div>
-          <Image
-            width={0}
-            height={0}
-            sizes="100vw"
-            src={"/Welcome.svg"}
-            alt=""
-            className="about__sectionImage"
-          />
+
+          <div className="about__sectionImageParent">
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              src={"/Welcome.svg"}
+              alt=""
+              className="about__sectionImage"
+            />
+          </div>
         </div>
       </Fade>
-      <Fade direction="up" triggerOnce className="about_sideParent">
-        <div className="about__buttons">
-          <button
-            className={
-              show.type === "quote"
-                ? "about__button about__button--active"
-                : "about__button"
-            }
-            onClick={() => Setshow({ type: "quote" })}
-          >
-            Favourite Quote
-          </button>
-          <button
-            className={
-              show.type === "interest"
-                ? "about__button about__button--active"
-                : "about__button"
-            }
-            onClick={() => Setshow({ type: "interest" })}
-          >
-            Interests
-          </button>
-          <button
-            className={
-              show.type === "recentTech"
-                ? "about__button about__button--active"
-                : "about__button"
-            }
-            onClick={() => Setshow({ type: "recentTech" })}
-          >
-            Recent Tech
-          </button>
-        </div>
-        <div className="about__side">
-          {show.type === "quote" && (
-            <div className="about__quote">
-              He who has a why to live can bear almost any how.
-              <span className="about__quoteAuthor">
-                <em>Friedrich Nietzsche</em>
-              </span>
-            </div>
-          )}
-          {show.type === "interest" && (
-            <div className="about__subSection">
-              <ul>
-                <li className="about__subSectionitem">Business</li>
-                <li className="about__subSectionitem">Playing Guitar</li>
-                <li className="about__subSectionitem">Mindfulness</li>
-                <li className="about__subSectionitem">Swing Trading</li>
-                <li className="about__subSectionitem">Singing</li>
-                <li className="about__subSectionitem">Web</li>
-              </ul>
-            </div>
-          )}
-          {show.type === "recentTech" && (
-            <div className="about__subSection">
-              <ul>
-                <li className="about__subSectionitem">React-Native</li>
-                <li className="about__subSectionitem">NestJs</li>
-                <li className="about__subSectionitem">PostgreSQL</li>
-                <li className="about__subSectionitem">MikroORM</li>
-                <li className="about__subSectionitem">NextJs</li>
-                <li className="about__subSectionitem">Solidity</li>
-              </ul>
-            </div>
-          )}
+      <Fade direction="up" triggerOnce>
+        <div className="about_sideParent">
+          <div className="about__buttons">
+            <button
+              className={
+                show.type === "quote"
+                  ? "about__button about__button--active"
+                  : "about__button"
+              }
+              onClick={() => Setshow({ type: "quote" })}
+            >
+              Favourite Quote
+            </button>
+            <button
+              className={
+                show.type === "interest"
+                  ? "about__button about__button--active"
+                  : "about__button"
+              }
+              onClick={() => Setshow({ type: "interest" })}
+            >
+              Interests
+            </button>
+            <button
+              className={
+                show.type === "recentTech"
+                  ? "about__button about__button--active"
+                  : "about__button"
+              }
+              onClick={() => Setshow({ type: "recentTech" })}
+            >
+              Recent Tech
+            </button>
+          </div>
+          <div className="about__side">
+            {show.type === "quote" && (
+              <div className="about__quote">
+                He who has a why to live can bear almost any how.
+                <span className="about__quoteAuthor">
+                  <em>Friedrich Nietzsche</em>
+                </span>
+              </div>
+            )}
+            {show.type === "interest" && (
+              <div className="about__subSection">
+                <ul>
+                  <li className="about__subSectionitem">Business</li>
+                  <li className="about__subSectionitem">Playing Guitar</li>
+                  <li className="about__subSectionitem">Mindfulness</li>
+                  <li className="about__subSectionitem">Swing Trading</li>
+                  <li className="about__subSectionitem">Singing</li>
+                  <li className="about__subSectionitem">Web</li>
+                </ul>
+              </div>
+            )}
+            {show.type === "recentTech" && (
+              <div className="about__subSection">
+                <ul>
+                  <li className="about__subSectionitem">React-Native</li>
+                  <li className="about__subSectionitem">NestJs</li>
+                  <li className="about__subSectionitem">PostgreSQL</li>
+                  <li className="about__subSectionitem">MikroORM</li>
+                  <li className="about__subSectionitem">NextJs</li>
+                  <li className="about__subSectionitem">Solidity</li>
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </Fade>
       <Fade direction="up" triggerOnce>
