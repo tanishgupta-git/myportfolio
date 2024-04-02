@@ -1,137 +1,127 @@
 .about {
-    width: 90%;
-    margin: 150px auto;
-    max-width: 1200px;
+  width: 90%;
+  margin: 150px auto;
+  max-width: 1200px;
 }
 .about__section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.about__sectionImage{
-    width: 35%;
-    max-width: 350px;
+.about__sectionImage {
+  width: 60%;
+  margin: 30px 0;
+  max-width: 350px;
 }
 
 .about__message {
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-    margin: 100px auto;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  margin: 100px auto;
 }
-.about__text{
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    color: #93939f;
-    width:100%;
-    max-width:700px;
+.about__text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #93939f;
 }
 .about__buttons {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 600px;
 }
 .about__button {
-    display: inline-block;
-    background-color: transparent;
-    border: none;
-    color: #18babd;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-    outline: none;
-    border-radius: 4px;
-    margin: 10px 0;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  color: #18babd;
+  font-size: 1.2rem;
+  padding: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+  margin: 10px 0;
 }
-.about__button--active{
-    background: rgba(24, 186, 189,0.1);  
+.about__button--active {
+  background: rgba(24, 186, 189, 0.1);
 }
 .about__button:hover {
-    background: rgba(24, 186, 189,0.1);
+  background: rgba(24, 186, 189, 0.1);
 }
 .about__sideParent {
-    margin: 50px 0;
-    box-sizing: border-box;
+  margin: 50px 0;
+  box-sizing: border-box;
 }
 .about__side {
-    padding: 30px;
+  padding: 30px;
 }
 .about__quote {
-    max-width:600px;
-    font-size: 1.4rem;
-    color: #93939f;
+  max-width: 600px;
+  font-size: 1.4rem;
+  color: #93939f;
 }
 .about__quoteAuthor {
-    display:flex;
-    justify-content: flex-end;
-    font-size: 1.1rem;
-    margin:10px 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  margin: 10px 0;
 }
 
 .about__subSection ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 100%;
-    max-width: 500px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+  padding: 0;
 }
 .about__subSectionitem {
-    position: relative;
-    padding: 0 25px;
-    margin-bottom:10px;
-    color: #93939f;
-    font-size: 1.2rem;
+  position: relative;
+  padding: 0 25px;
+  margin-bottom: 10px;
+  color: #93939f;
+  font-size: 1.2rem;
 }
 .about__subSectionitem:before {
-    content: "▹";
-    position: absolute;
-    left: 0px;
-    font-size: 1.8rem;
-    color: #18babd;
-    line-height: 20px;
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  font-size: 1.8rem;
+  color: #18babd;
+  line-height: 20px;
 }
-.about__messageHead{
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #787887;
+.about__messageHead {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #787887;
 }
 .about__text--light {
-    color:#93939f;;
-    font-size: 1.2rem;
+  color: #93939f;
+  font-size: 1.2rem;
 }
 .about__contact {
-    color: #18babd;
+  color: #18babd;
 }
 
-@media screen and (max-width:1000px) {
-    .about__section {
-        flex-direction: column;
-    }
-    .about__sectionImage {
-        width: 60%;
-        margin: 30px 0;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .about {
-        margin: 100px auto;
-    }
-    .about__text {
-        margin-top: 30px;
-    }
-    .about__button {
-        margin: 10px 0;
-        font-size: 1rem;
-    }
-    .about__quote{
-        font-size: 1.2rem;
-    } 
-    .about__quoteAuthor {
-        font-size: 1rem;
-    }
+@media screen and (max-width: 600px) {
+  .about {
+    margin: 100px auto;
+  }
+  .about__text {
+    margin-top: 30px;
+  }
+  .about__button {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+  .about__quote {
+    font-size: 1.2rem;
+  }
+  .about__quoteAuthor {
+    font-size: 1rem;
+  }
 }

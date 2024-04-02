@@ -7,8 +7,8 @@ import Image from "next/image";
 const Header = () => {
   const [showNav, SetshowNav] = useState(false);
   return (
-    <Fade direction="up" triggerOnce>
-      <nav className="navbar">
+    <nav className="navbar">
+      <Fade direction="up" triggerOnce>
         <div className="navbar__main">
           <Image
             className="navbar__logo"
@@ -53,8 +53,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-      </nav>
-    </Fade>
+      </Fade>
+    </nav>
   );
 };
 
